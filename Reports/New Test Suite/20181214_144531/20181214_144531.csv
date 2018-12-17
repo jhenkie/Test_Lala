@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+New Test Suite,,,2018-12-14 14:45:35,2018-12-14 14:45:42,7.237s,PASSED
+,,,,,,
+Test Cases/TestHTTPMethods,,,2018-12-14 14:45:35,2018-12-14 14:45:42,6.825s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,2018-12-14 14:45:36,2018-12-14 14:45:39,3.749s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/CreateUser""))",,,2018-12-14 14:45:39,2018-12-14 14:45:40,0.601s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/UpdateUser""))",,,2018-12-14 14:45:40,2018-12-14 14:45:41,1.375s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/DeleteUser""))",,,2018-12-14 14:45:41,2018-12-14 14:45:42,0.630s,PASSED

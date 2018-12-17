@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite1,,,2018-12-14 15:17:02,2018-12-14 15:17:16,13.891s,PASSED
+,,,,,,
+Test Cases/CalculatorTests/Addition,,,2018-12-14 15:17:02,2018-12-14 15:17:08,6.152s,PASSED
+"sendRequest(findTestObject(""CalculatorSoapService/Addition""))",,,2018-12-14 15:17:02,2018-12-14 15:17:06,3.423s,PASSED
+"response = sendRequestAndVerify(findTestObject(""CalculatorSoapService/Addition""))",,,2018-12-14 15:17:06,2018-12-14 15:17:08,2.342s,PASSED
+,,,,,,
+Test Cases/GetBankDetails,,,2018-12-14 15:17:08,2018-12-14 15:17:11,2.665s,PASSED
+"sendRequest(findTestObject(""SOAP/getBank""))",,,2018-12-14 15:17:08,2018-12-14 15:17:11,2.473s,PASSED
+,,,,,,
+Test Cases/ListUsersTest,,,2018-12-14 15:17:11,2018-12-14 15:17:13,2.168s,PASSED
+"sendRequest(findTestObject(""UserRestService/ListUsers""))",,,2018-12-14 15:17:11,2018-12-14 15:17:12,1.353s,PASSED
+"response = sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,2018-12-14 15:17:12,2018-12-14 15:17:13,0.569s,PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Charles"")",,,2018-12-14 15:17:13,2018-12-14 15:17:13,0.016s,PASSED
+"verifyElementPropertyValue(response, ""data[2].id"", ""6"")",,,2018-12-14 15:17:13,2018-12-14 15:17:13,0.017s,PASSED
+"verifyElementsCount(response, ""data"", 3)",,,2018-12-14 15:17:13,2018-12-14 15:17:13,0.021s,PASSED
+results = JsonSlurper().parseText(response.getResponseBodyContent()),,,2018-12-14 15:17:13,2018-12-14 15:17:13,0.002s,PASSED
+println(results.size()),,,2018-12-14 15:17:13,2018-12-14 15:17:13,0.004s,PASSED
+,,,,,,
+Test Cases/TestHTTPMethods,,,2018-12-14 15:17:13,2018-12-14 15:17:15,2.551s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,2018-12-14 15:17:13,2018-12-14 15:17:14,0.979s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/CreateUser""))",,,2018-12-14 15:17:14,2018-12-14 15:17:15,0.579s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/UpdateUser""))",,,2018-12-14 15:17:15,2018-12-14 15:17:15,0.501s,PASSED
+"sendRequestAndVerify(findTestObject(""UserRestService/DeleteUser""))",,,2018-12-14 15:17:15,2018-12-14 15:17:15,0.363s,PASSED

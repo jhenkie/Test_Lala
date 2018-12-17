@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TestSuite1,,,2018-12-14 15:38:00,2018-12-14 15:38:04,4.100s,PASSED
+,,,,,,
+Test Cases/ListUsersTest,,,2018-12-14 15:38:00,2018-12-14 15:38:04,3.764s,PASSED
+"sendRequest(findTestObject(""UserRestService/ListUsers""))",,,2018-12-14 15:38:00,2018-12-14 15:38:03,2.292s,PASSED
+"response = sendRequestAndVerify(findTestObject(""UserRestService/ListUsers""))",,,2018-12-14 15:38:03,2018-12-14 15:38:04,0.975s,PASSED
+"verifyElementPropertyValue(response, ""data[1].first_name"", ""Charles"")",,,2018-12-14 15:38:04,2018-12-14 15:38:04,0.031s,PASSED
+"verifyElementPropertyValue(response, ""data[2].id"", ""6"")",,,2018-12-14 15:38:04,2018-12-14 15:38:04,0.018s,PASSED
+"verifyElementsCount(response, ""data"", 3)",,,2018-12-14 15:38:04,2018-12-14 15:38:04,0.041s,PASSED
+results = JsonSlurper().parseText(response.getResponseBodyContent()),,,2018-12-14 15:38:04,2018-12-14 15:38:04,0.002s,PASSED
+println(results.size()),,,2018-12-14 15:38:04,2018-12-14 15:38:04,0.003s,PASSED
